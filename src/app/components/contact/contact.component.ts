@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -10,9 +10,8 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ContactComponent {
      contactForm: FormGroup;
-     // @ViewChild('emailLink', { static: false }) emailLink!: ElementRef;
-     email = 'Vickyndmh@gmail.com';
-     phoneNumber: string = '6377780314'; // Replace with the desired phone number
+     email = 'info@truetravelpartner.com';
+     phoneNumber: string = '+919782640733'; // Replace with the desired phone number
      message: string = 'Hello True Travel Team, I’m interested in exploring travel options. Could you share the best packages and destinations?';
 
      constructor(private fb: FormBuilder,
@@ -32,13 +31,29 @@ export class ContactComponent {
 
 
      ngAfterViewInit(): void {
-          // this.emailLink.nativeElement.href = `mailto:${this.email}`;
      }
 
      openWhatsApp() {
-          const encodedMessage = encodeURIComponent(this.message);
-          const whatsappLink = `https://wa.me/${this.phoneNumber}?text=${encodedMessage}`;
-          window.open(whatsappLink, '_blank');
+          if (!this.phoneNumber || !this.message) {
+               console.error('Phone number or message is missing.');
+               // alert('Please provide a valid phone number and message.');
+               this.showErrorMessage('Please provide a valid phone number and message.');
+
+               return;
+           }
+           try {
+               const encodedMessage = encodeURIComponent(this.message);
+               const whatsappLink = `https://wa.me/${this.phoneNumber}?text=${encodedMessage}`;
+               console.log('Generated WhatsApp Link:', whatsappLink);
+               window.open(whatsappLink, '_blank');
+           } catch (error) {
+               console.error('Error opening WhatsApp link:', error);
+               // alert('Failed to open WhatsApp. Please try again.');
+               this.showErrorMessage('Error opening WhatsApp link');
+           }
+          // const encodedMessage = encodeURIComponent(this.message);
+          // const whatsappLink = `https://wa.me/${this.phoneNumber}?text=${encodedMessage}`;
+          // window.open(whatsappLink, '_blank');
      }
 
 
@@ -55,7 +70,7 @@ export class ContactComponent {
                     message: formValues.message,
                     date: formValues.date || 'Not Provided',
                     numberOfPersons: formValues.numberOfPersons || 'Not Provided',
-                    to_email: 'Vickyndmh@gmail.com'
+                    to_email: 'info@truetravelpartner.com'
                };
                //
 
@@ -65,13 +80,11 @@ export class ContactComponent {
                          (response: EmailJSResponseStatus) => {
                               console.log('Email sent successfully!', response.status, response.text);
                               this.showSuccessMessage();
-                              //    alert('Your message has been sent successfully!');
                               this.contactForm.reset(); // Reset the form after submission
                          },
                          (err) => {
                               console.error('Failed to send email.', err);
-                              this.showErrorMessage();
-                              //    alert('There was an error sending your message. Please try again.');
+                              this.showErrorMessage('Something went wrong!');
                          }
                     );
           } else {
@@ -90,8 +103,8 @@ export class ContactComponent {
      }
 
      // Function to show error message
-     showErrorMessage() {
-          this.snackBar.open('Something went wrong!', 'Close', {
+     showErrorMessage(message:any) {
+          this.snackBar.open(message, 'Close', {
                duration: 3000,
                panelClass: ['error-snackbar'], // Error styling
                horizontalPosition: 'center',

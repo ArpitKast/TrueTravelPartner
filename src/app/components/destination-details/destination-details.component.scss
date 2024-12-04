@@ -1,32 +1,32 @@
 .package-card {
      transition: transform 0.3s ease, box-shadow 0.3s ease;
      cursor: pointer;
-   }
-   
-   .package-card:hover {
+}
+
+.package-card:hover {
      transform: scale(1.05);
      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
-   }
-   
-   .img-fluid {
-     transition: transform 0.5s ease;
-   }
-   
-   .img-fluid:hover {
-     transform: rotate(5deg) scale(1.1);
-   }
-   
+}
 
-   /* General Styling */
+.img-fluid {
+     transition: transform 0.5s ease;
+}
+
+.img-fluid:hover {
+     transform: rotate(5deg) scale(1.1);
+}
+
+
+/* General Styling */
 body {
      font-family: 'Arial', sans-serif;
      margin: 0;
      padding: 0;
      background-color: #f9f9f9;
-   }
-   
-   /* Container Styling */
-   .destination-container {
+}
+
+/* Container Styling */
+.destination-container {
      max-width: 1200px;
      margin: auto;
      text-align: center;
@@ -35,33 +35,33 @@ body {
      border-radius: 10px;
      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
      position: relative;
-   }
-   
-   /* Image Section */
-   .destination-image {
+}
+
+/* Image Section */
+.destination-image {
      position: relative;
      width: 100%;
      height: 500px;
      display: block;
-   }
-   
-   .destination-image img {
+}
+
+.destination-image img {
      width: 100%;
      height: 100%;
      object-fit: cover;
      border-radius: 10px 10px 0 0;
-   }
-   
-   .image-overlay {
+}
+
+.image-overlay {
      position: absolute;
      bottom: 20px;
      left: 50%;
      transform: translateX(-50%);
      color: white;
      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-   }
-   
-   .back-button {
+}
+
+.back-button {
      position: absolute;
      top: 15px;
      left: 15px;
@@ -74,83 +74,84 @@ body {
      cursor: pointer;
      z-index: 10;
      transition: background-color 0.3s ease;
-   }
-   
-   .back-button:hover {
+}
+
+.back-button:hover {
      background: rgba(0, 0, 0, 0.8);
-   }
-   .image-overlay h1 {
+}
+
+.image-overlay h1 {
      font-size: 3rem;
      margin: 25;
-   }
-   
-   .image-overlay p {
+}
+
+.image-overlay p {
      font-size: 1.2rem;
-   }
-   
-   /* Details Section */
-   .destination-details {
+}
+
+/* Details Section */
+.destination-details {
      padding: 20px;
      text-align: left;
-   }
-   
-   .destination-details h2 {
+}
+
+.destination-details h2 {
      color: #333;
-   }
-   
-   .destination-details ul {
+}
+
+.destination-details ul {
      list-style-type: none;
      padding: 0;
-   }
-   
-   .destination-details li {
+}
+
+.destination-details li {
      font-size: 1.1rem;
      color: #555;
      margin: 10px 0;
-   }
-   
-   .destination-details li::before {
+}
+
+.destination-details li::before {
      content: '📍';
      margin-right: 8px;
      color: #ff5722;
-   }
-   
-   .explore-section {
+}
+
+.explore-section {
      background: url('../../../assets/images/goa_beach.jpg') no-repeat center center/cover;
      color: #ffffff;
      text-align: center;
      // padding: 100px 0px;
      position: relative;
-   }
-   
-   .explore-container {
+}
+
+.explore-container {
      // max-width: 800px;
      margin: 0 auto;
      background-color: rgba(0, 0, 0, 0.6);
      padding: 40px 0px;
      // border-radius: 8px;
-   }
-   
-   .subtitle {
+}
+
+.subtitle {
      font-size: 18px;
      color: #7ab3e6;
      margin-bottom: 10px;
      font-weight: bold;
-   }
-   
-   .main-title {
+}
+
+.main-title {
      font-size: 36px;
      font-weight: bold;
      margin-bottom: 20px;
-   }
-   
-   .description {
+}
+
+.description {
      font-size: 16px;
      margin-bottom: 30px;
      line-height: 1.6;
-   }
-   
-   .btn-explore {
+}
+
+.btn-explore {
      background-color: #7ab3e6;
      border: none;
      color: #ffffff;
@@ -159,65 +160,65 @@ body {
      border-radius: 4px;
      cursor: pointer;
      transition: background-color 0.3s;
-   }
-   
-   .btn-explore:hover {
-     background-color: #549acb;
-   }
+}
 
-   /* Destination Details Page */
+.btn-explore:hover {
+     background-color: #549acb;
+}
+
+/* Destination Details Page */
 .destination-details {
      font-family: 'Arial', sans-serif;
-   }
-   
-   .destination-title {
+}
+
+.destination-title {
      font-size: 2.5rem;
      font-weight: 700;
      color: #2c3e50;
-   }
-   
-   .highlights li {
+}
+
+.highlights li {
      font-size: 1rem;
      margin-bottom: 0.5rem;
-   }
-   
-   .attractions h2 {
+}
+
+.attractions h2 {
      font-size: 2rem;
      font-weight: 600;
      color: #34495e;
-   }
-   
-   .card {
+}
+
+.card {
      border: none;
      transition: transform 0.2s ease, box-shadow 0.2s ease;
-   }
-   
-   .card:hover {
+}
+
+.card:hover {
      transform: scale(1.05);
      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-   }
-   
-   .card-img-top {
+}
+
+.card-img-top {
      height: 200px;
      object-fit: cover;
-   }
-   
-   .card-title {
+}
+
+.card-title {
      font-size: 1.25rem;
      font-weight: 600;
-   }
-   
-   .card-text {
+}
+
+.card-text {
      font-size: 0.95rem;
      color: #7f8c8d;
-   }
-   
-   @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
      .destination-title {
-       font-size: 2rem;
+          font-size: 2rem;
      }
+
      .card-img-top {
-       height: 150px;
+          height: 150px;
      }
-   }
-   
+}

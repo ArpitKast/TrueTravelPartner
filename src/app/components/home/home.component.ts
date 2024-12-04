@@ -63,6 +63,22 @@ export class HomeComponent {
                name: 'Amritsar',
                image: '../../../assets/images/amritsar.jpg',
           },
+          {id: 13,
+               name: 'Jaisalmer',
+               image: '../../../assets/images/jaisalmer1.jpg',
+          },
+          {id: 14,
+               name: 'Ranthambore',
+               image: '../../../assets/images/Ranthambore.jpg',
+          },
+          {id: 15,
+               name: 'Nainital',
+               image: '../../../assets/images/Nainital.jpg',
+          },
+          {id: 16,
+               name: 'Thailand',
+               image: '../../../assets/images/thailand.jpg',
+          },
      ];
 
      services = [
