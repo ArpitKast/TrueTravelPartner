@@ -1,0 +1,112 @@
+<!-- <div class="destination-container">
+     <div class="destination-image">
+     <div *ngIf="destinationDetails" class="text-center">
+       <h2>{{ destinationDetails.name }}</h2>
+       <img
+         [src]="destinationDetails.image"
+         [alt]="destinationDetails.name"
+         class="img-fluid rounded-circle my-4"
+         style="max-width: 300px;"
+       />
+       <p>{{ destinationDetails.description }}</p>
+       <h4>Top Attractions:</h4>
+       <ul class="list-unstyled">
+         <li *ngFor="let attraction of destinationDetails.attractions">
+           <i class="fa fa-map-marker-alt text-danger"></i> {{ attraction }}
+         </li>
+       </ul>
+     </div>
+   </div>
+    -->
+
+
+    <div class="destination-container position-relative">
+     <div class="destination-image" *ngIf="destinationDetails">
+       <img [src]="destinationDetails.image" [alt]="destinationDetails.name" class="w-100" />
+   
+       <!-- Back button -->
+       <button class="back-button position-absolute" (click)="goToHome()">
+         <i class="fa-solid fa-arrow-left"></i>
+       </button>
+   
+       <div class="image-overlay">
+         <h1>{{ destinationDetails.name }}</h1>
+         <p>{{ destinationDetails.description }}</p>
+       </div>
+     </div>
+   </div>
+   
+    
+     <div class="col-md-6 text-center bg-light" style="width: 100%;">
+          <h2>Why Visit Here?</h2>
+          <p style="margin: 0 55px; white-space: pre-line">
+               {{destinationDetails.details}}
+          </p>
+
+         
+     </div>
+
+     <div class="destination-details text-center bg-light" style="width: 100%;">
+          <h2>Top 3 Attractions:</h2>
+          <ul class="attractions-list d-flex justify-content-center list-unstyled">
+            <li *ngFor="let attraction of destinationDetails.attractions" class="mx-3">
+              {{ attraction }}
+            </li>
+          </ul>
+        </div>
+    
+
+
+
+     <section class="explore-section">
+          <div class="explore-container">
+               <h4 class="subtitle">Start Your Adventures</h4>
+               <h1 class="main-title">Let's Explore This World</h1>
+               <p class="description">
+                    Discover breathtaking destinations, create unforgettable memories, and experience the world like
+                    never before. Start planning your next adventure today!
+               </p>
+               <i class="fa-regular fa-face-smile fa-2xl clrLight"></i>
+          </div>
+     </section>
+
+
+   
+
+     <app-contact></app-contact>
+     <!-- Footer -->
+     <footer class="bg-dark text-white text-center py-4">
+          <div class="container">
+               <div class="row">
+                    <!-- Contact Information -->
+                    <div class="col-md-4">
+                         <h5>Contact Us</h5>
+                         <ul class="list-unstyled">
+                              <li><i class="fa fa-phone-alt"></i> Phone: +123 456 7890</li>
+                              <li><i class="fa fa-envelope"></i> Email: 'info&#64;travelagency.com'</li>
+                              <li><i class="fa fa-map-marker-alt"></i> Address 1: 123 Main St, City</li>
+                              <li><i class="fa fa-map-marker-alt"></i> Address 2: 456 Park Ave, City</li>
+                         </ul>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="col-md-4">
+                         <h5>Follow Us</h5>
+                         <ul class="list-unstyled">
+                              <li><a href="#" class="text-white"><i class="fa fa-facebook"></i> Facebook</a></li>
+                              <li><a href="#" class="text-white"><i class="fa fa-twitter"></i> Twitter</a></li>
+                              <li><a href="#" class="text-white"><i class="fa fa-instagram"></i> Instagram</a></li>
+                         </ul>
+                    </div>
+
+                    <!-- About Us Section -->
+                    <div class="col-md-4">
+                         <h5>About Us</h5>
+                         <p>We are a leading travel agency offering personalized travel packages and services. Let us
+                              help you plan your dream vacation!</p>
+                    </div>
+               </div>
+          </div>
+
+          <p class="mt-3">&copy; 2024 Travel Agency. All rights reserved.</p>
+     </footer>

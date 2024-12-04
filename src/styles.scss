@@ -1,1 +1,399 @@
-/* You can add global styles to this file, and also import other style files */
+// /* You can add global styles to this file, and also import other style files */
+
+// html {
+//      scroll-behavior: smooth;
+//    }
+   
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// /* General Snackbar Styling */
+// .mat-snack-bar-container {
+//      display: flex;
+//      align-items: center;
+//      justify-content: space-between;
+//      border-radius: 8px !important;
+//      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for modern look */
+//      font-family: 'Arial', sans-serif;
+//      font-size: 16px;
+//      padding: 16px 24px; /* Add spacing inside */
+//    }
+   
+//    /* Success Snackbar */
+//    .success-snackbar {
+//      background-color: #d4edda !important; /* Soft green */
+//      color: #155724 !important; /* Darker green for text */
+//      border-left: 4px solid #28a745 !important; /* Green left border */
+//    }
+   
+//    /* Error Snackbar */
+//    .error-snackbar {
+//      background-color: #f8d7da !important; /* Soft red */
+//      color: #721c24 !important; /* Darker red for text */
+//      border-left: 4px solid #dc3545 !important; /* Red left border */
+//    }
+   
+//    /* Close Button Styling */
+//    .mat-simple-snackbar-action {
+//      color: #007bff !important; /* Blue for action text */
+//      font-weight: bold;
+//      text-transform: uppercase;
+//      font-size: 14px;
+//      cursor: pointer;
+//    }
+   
+//    /* Snackbar Animation */
+//    @keyframes fadeInUp {
+//      from {
+//        transform: translateY(20px);
+//        opacity: 0;
+//      }
+//      to {
+//        transform: translateY(0);
+//        opacity: 1;
+//      }
+//    }
+   
+//    .mat-snack-bar-container {
+//      animation: fadeInUp 0.3s ease-out;
+//    }
+   
+   
+
+//    .logo{
+//      width: 65px;
+//      height: 35px;
+// }
+// .header {
+//      // background: url('images/jaisalmer_fort.jpg') no-repeat center center/cover;
+//      color: white;
+//      border: 2px solid red;
+//    }
+   
+
+//    .card {
+//      border: none;
+//      transition: transform 0.3s;
+//    }
+   
+//    .card:hover {
+//      transform: scale(1.05);
+//    }
+   
+
+//    /* General Styling */
+// body {
+//      margin: 0;
+//      font-family: Arial, sans-serif;
+//    }
+   
+//    /* Hero Section */
+//    .hero-section {
+//      height: 100vh;
+//      // background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+//      position: relative;
+//      padding-top: 56px; /* To account for fixed navbar height */
+//    }
+   
+//    .hero-section h1 {
+//      font-size: 3rem;
+//      font-weight: bold;
+//    }
+   
+//    .hero-section p {
+//      font-size: 1.5rem;
+//      margin-top: 10px;
+//    }
+   
+//    /* Navigation Bar */
+//    .navbar {
+//      position: relative; /* Fix the navbar at the top */
+//      top: 0;
+//      left: 0;
+//      width: 100%; /* Ensure it spans the full width */
+//      z-index: 1050; /* Keep it above other content */
+//      background-color: white; /* Background to avoid transparency overlap */
+//      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+//    }
+   
+//    .navbar-brand {
+//      font-weight: bold;
+//    }
+   
+
+//    .heading{
+//      color: #23488A;
+//    }
+
+
+// /* Features Section */
+// #features-section {
+//      padding: 3rem 1rem;
+//      background-color: #f9f9f9;
+//      text-align: center;
+//    }
+   
+//    .features-container {
+//      display: flex;
+//      flex-wrap: wrap;
+//      gap: 2rem;
+//      justify-content: center;
+//      // max-width: 1200px;
+//      margin: 0 auto;
+//    }
+   
+//    .feature-box {
+//      background: #fff;
+//      padding: 1.5rem;
+//      border-radius: 8px;
+//      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//      width: calc(25% - 2rem);
+//      text-align: center;
+//      transition: transform 0.3s ease, box-shadow 0.3s ease;
+//    }
+   
+//    .feature-box:hover {
+//      transform: translateY(-10px);
+//      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+//    }
+   
+//    .feature-box img {
+//      width: 60px;
+//      height: 60px;
+//      margin-bottom: 1rem;
+//    }
+   
+//    .feature-box h3 {
+//      font-size: 1.25rem;
+//      font-weight: bold;
+//      color: #23488A;
+//      margin: 1rem;
+//    }
+   
+//    .feature-box p {
+//      font-size: 0.95rem;
+//      color: #23488A;
+//    }
+   
+//    /* Responsive Design */
+//    @media (max-width: 768px) {
+//      .feature-box {
+//        width: calc(50% - 1rem);
+//      }
+//    }
+   
+//    @media (max-width: 480px) {
+//      .feature-box {
+//        width: 92%;
+//      }
+//    }
+   
+
+//    .clrLight{
+//      color: white;
+//    }
+
+//     .full-screen-header {
+//      height: 50vh; 
+     
+//      // margin: 20px 50px 20px 50px;
+//      // border-radius: 40px;
+//      // box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//      // display: flex; 
+//      // flex-direction: column;
+//      // justify-content: center; 
+//      // align-items: center;
+//      color: white;
+//      text-align: center;
+//      position: relative;
+//      overflow: hidden; 
+//      background-size: cover; 
+//      // background-position: center center;
+//      animation: backgroundSlide 25s infinite; 
+//    } 
+   
+//    @keyframes backgroundSlide {
+//      0% {
+//        background-image: url('assets/images/goa_beach.jpg');
+//      }
+//      33% {
+//        background-image: url('assets/images/jaisalmer_fort.jpg');
+//      }
+//      66% {
+//        background-image: url('assets/images/goa_beach.jpg');
+//      }
+//      100% {
+//        background-image: url('assets/images/jaisalmer_fort.jpg');
+//      }
+//    }
+
+//    .container-destination {
+//      margin-top: 20px;
+//    }
+   
+//    .section-title {
+//      font-size: 24px;
+//      font-weight: bold;
+//      margin-bottom: 30px;
+//      color: #ff5722;
+//    }
+   
+//    .package-card {
+//      text-align: center;
+//    }
+   
+//    .package-image {
+//      // width: 70%;
+     
+//      // height: auto;
+//      border-radius: 50%;
+//      transition: transform 0.3s ease-in-out;
+//      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+//    }
+   
+//    .package-image:hover {
+//      transform: scale(1.1);
+//    }
+   
+//    .package-title {
+//      font-size: 16px;
+//      font-weight: 600;
+//      margin-top: 15px;
+//      color: #23488A;
+//    }
+   
+//    @media (min-width: 992px) {
+//      .package-image {
+//        width: 75%; /* Larger image size for laptop and bigger screens */
+//        height: 210px;
+//      }
+//    }
+
+//    @media (max-width: 992px) {
+//      .package-image {
+//        width: 75%; /* Larger image size for laptop and bigger screens */
+//        height: 210px;
+//      }
+//    }
+   
+//    /* Media query for smaller screens (Mobile view) */
+//    @media (max-width: 576px) {
+//      .package-image {
+//         width: 90%;   /* Smaller image size for mobile screens */
+//         height: 160px;
+//      }
+//    }
+
+   
+
+// //    :host {
+// //      display: block;
+// //      padding: 2rem;
+// //      background-color: #f9f9f9; /* Light background color */
+// //    }
+   
+//    .h2 {
+//      text-align: center;
+//      color: #23488A; /* Darker text for better readability */
+//      margin-bottom: 1.5rem;
+//      font-weight: bold;
+//    }
+   
+//    .services-container {
+//      display: flex;
+//      flex-wrap: wrap;
+//      justify-content: center;
+//      gap: 1.5rem;
+//    }
+   
+//    .service-card {
+//      background-color: #ffffff; /* White card background */
+//      border: 1px solid #e0e0e0; /* Light gray border */
+//      border-radius: 10px;
+//      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+//      padding: 1.5rem;
+//      // width: 300px;
+//      text-align: center;
+//      transition: transform 0.3s ease, box-shadow 0.3s ease;
+//    }
+   
+//    .service-card:hover {
+//      transform: translateY(-5px); /* Slight lift effect */
+//      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+//    }
+   
+//    .service-icon {
+//      font-size: 2.5rem;
+//      color: #3cbab8; /* Light teal color for icons */
+//      margin-bottom: 1rem;
+//    }
+   
+//    .service-title {
+//      font-size: 1.2rem;
+//      font-weight: bold;
+//      color: #23488A;
+//      margin-bottom: 0.5rem;
+//    }
+   
+//    .service-description {
+//      font-size: 0.9rem;
+//      color: #23488A; 
+//      line-height: 1.5;
+//    }
+   
+
+//  i{
+//      color: #23488A;
+//  }
+
+//    .explore-section {
+//      background: url('../../../assets/images/goa_beach.jpg') no-repeat center center/cover;
+//      color: #ffffff;
+//      text-align: center;
+//      // padding: 100px 0px;
+//      position: relative;
+//    }
+   
+//    .explore-container {
+//      // max-width: 800px;
+//      margin: 0 auto;
+//      background-color: rgba(0, 0, 0, 0.6);
+//      padding: 40px 0px;
+//      // border-radius: 8px;
+//    }
+   
+//    .subtitle {
+//      font-size: 18px;
+//      color: #7ab3e6;
+//      margin-bottom: 10px;
+//      font-weight: bold;
+//    }
+   
+//    .main-title {
+//      font-size: 36px;
+//      font-weight: bold;
+//      margin-bottom: 20px;
+//    }
+   
+//    .description {
+//      font-size: 16px;
+//      margin-bottom: 30px;
+//      line-height: 1.6;
+//    }
+   
+//    .btn-explore {
+//      background-color: #7ab3e6;
+//      border: none;
+//      color: #ffffff;
+//      padding: 10px 20px;
+//      font-size: 16px;
+//      border-radius: 4px;
+//      cursor: pointer;
+//      transition: background-color 0.3s;
+//    }
+   
+//    .btn-explore:hover {
+//      background-color: #549acb;
+//    }
+   
+   

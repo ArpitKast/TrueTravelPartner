@@ -1,0 +1,529 @@
+.logo{
+     width: 65px;
+     height: 35px;
+}
+.header {
+     // background: url('images/jaisalmer_fort.jpg') no-repeat center center/cover;
+     color: white;
+     border: 2px solid red;
+   }
+   
+
+   .card {
+     border: none;
+     transition: transform 0.3s;
+   }
+   
+   .card:hover {
+     transform: scale(1.05);
+   }
+   
+
+   /* General Styling */
+body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+   }
+   
+   /* Hero Section */
+   .hero-section {
+     height: 100vh;
+     // background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+     position: relative;
+     padding-top: 56px; /* To account for fixed navbar height */
+   }
+   
+   .hero-section h1 {
+     font-size: 3rem;
+     font-weight: bold;
+   }
+   
+   .hero-section p {
+     font-size: 1.5rem;
+     margin-top: 10px;
+   }
+   
+   /* Navigation Bar */
+   .navbar {
+     position: relative; /* Fix the navbar at the top */
+     top: 0;
+     left: 0;
+     width: 100%; /* Ensure it spans the full width */
+     z-index: 1050; /* Keep it above other content */
+     background-color: white; /* Background to avoid transparency overlap */
+     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   }
+   
+   .navbar-brand {
+     font-weight: bold;
+   }
+   
+
+   .heading{
+     color: #23488A;
+   }
+
+
+/* Features Section */
+#features-section {
+     padding: 3rem 1rem;
+     background-color: #f9f9f9;
+     text-align: center;
+   }
+   
+   .features-container {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 2rem;
+     justify-content: center;
+     // max-width: 1200px;
+     margin: 0 auto;
+   }
+   
+   .feature-box {
+     background: #fff;
+     padding: 1.5rem;
+     border-radius: 8px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     width: calc(25% - 2rem);
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   
+   .feature-box:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+   }
+   
+   .feature-box img {
+     width: 60px;
+     height: 60px;
+     margin-bottom: 1rem;
+   }
+   
+   .feature-box h3 {
+     font-size: 1.25rem;
+     font-weight: bold;
+     color: #23488A;
+     margin: 1rem;
+   }
+   
+   .feature-box p {
+     font-size: 0.95rem;
+     color: #23488A;
+   }
+   
+   /* Responsive Design */
+   @media (max-width: 768px) {
+     .feature-box {
+       width: calc(50% - 1rem);
+     }
+   }
+   
+   @media (max-width: 480px) {
+     .feature-box {
+       width: 92%;
+     }
+   }
+   
+
+   .clrLight{
+     color: white;
+   }
+
+    .full-screen-header {
+     height: 50vh; 
+     
+     // margin: 20px 50px 20px 50px;
+     // border-radius: 40px;
+     // box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     // display: flex; 
+     // flex-direction: column;
+     // justify-content: center; 
+     // align-items: center;
+     color: white;
+     text-align: center;
+     position: relative;
+     overflow: hidden; 
+     background-size: cover; 
+     // background-position: center center;
+     animation: backgroundSlide 25s infinite; 
+   } 
+   
+   @keyframes backgroundSlide {
+     0% {
+       background-image: url('../../../assets/images/goa_beach.jpg');
+     }
+     33% {
+       background-image: url('../../../assets/images/jaisalmer_fort.jpg');
+     }
+     66% {
+       background-image: url('../../../assets/images/goa_beach.jpg');
+     }
+     100% {
+       background-image: url('../../../assets/images/jaisalmer_fort.jpg');
+     }
+   } 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    .full-screen-header {
+//      height: 100vh; 
+//      display: flex; 
+//      // flex-direction: column; 
+//      justify-content: center;
+//      align-items: center; 
+//      // background: url('../../../assets/images/goa_beach.jpg') no-repeat center center/cover;
+//      color: white;
+//      text-align: center; 
+//    }
+   
+//    .image-slider {
+//      position: absolute;
+//      bottom: 0; 
+//      width: 100%;
+//      height: 50%; 
+//      overflow: hidden;
+//    }
+   
+//    .slider-wrapper {
+//      display: flex;
+//      width: 300%;
+//      animation: slide 15s infinite; 
+//    }
+   
+//    .slider-wrapper img {
+//      width: 100%; 
+//      height: auto; 
+//    } 
+   
+//     @keyframes slide {
+//      0% {
+//        transform: translateX(0);
+//      }
+//      33% {
+//        transform: translateX(-100%);
+//      }
+//      66% {
+//        transform: translateX(-200%);
+//      }
+//      100% {
+//        transform: translateX();
+//      }
+//    } 
+
+   /* .image-slider {
+     position: relative;
+     width: 100%;
+     height: 100vh; 
+     margin: 20px 50px 20px 50px;
+     border-radius: 40px;
+     box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     overflow: hidden;
+   }
+   
+   .slides {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+     height: 100vh;
+   }
+   
+   .slide {
+     min-width: 100%;
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+   }
+
+   .navigation-dots {
+     position: absolute;
+     bottom: 20px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     gap: 10px;
+   }
+   
+   .dot {
+     width: 15px;
+     height: 15px;
+     background: white;
+     border-radius: 50%;
+     cursor: pointer;
+     opacity: 0.5;
+     transition: opacity 0.3s ease;
+   }
+   
+   .dot.active {
+     opacity: 1;
+   } */
+
+   /* Slider Container Styling */
+// .image-slider {
+//      position: relative;
+//      /* width: 100%; */
+//      // margin: 20px 50px 20px 50px;
+//      // border-radius: 40px;
+//      box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//      height: 50vh; /* Full-screen height */
+//      overflow: hidden;
+//    }
+   
+//    .slider-wrapper {
+//      height: 100vh;
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: center;
+//      align-items: center;
+//    }
+   
+//    .slides {
+//      display: flex;
+//      transition: transform 0.8s ease-in-out;
+//      width: 100%;
+//      height: 100vh;
+//    }
+   
+//    .slide {
+//      min-width: 100%;
+//      height: 100vh;
+//      display: flex;
+//      flex-direction: column;
+//      justify-content: center;
+//      align-items: center;
+//      background-size: cover; /* Ensures the image covers the entire container */
+//      background-position: center; /* Centers the image */
+//      background-repeat: no-repeat;
+//      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Enhances text visibility */
+//      color: white;
+//      font-family: Arial, sans-serif;
+//    }
+   
+//    h1 {
+//      font-size: 2.5rem;
+//      margin-bottom: 10px;
+//    }
+   
+//    p {
+//      font-size: 1.2rem;
+//    }
+   
+//    .navigation-dots {
+//      position: absolute;
+//      bottom: 20px;
+//      left: 50%;
+//      transform: translateX(-50%);
+//      display: flex;
+//      gap: 10px;
+//    }
+   
+//    .dot {
+//      width: 12px;
+//      height: 12px;
+//      background: rgba(255, 255, 255, 0.5);
+//      border-radius: 50%;
+//      cursor: pointer;
+//      transition: background 2s;
+//    }
+   
+//    .dot.active {
+//      background: rgba(255, 255, 255, 1);
+//    }
+   
+//    /* Responsive Styling */
+//    @media (max-width: 768px) {
+//      h1 {
+//        font-size: 1.8rem;
+//      }
+//      p {
+//        font-size: 1rem;
+//      }
+//    }
+   
+   
+
+   .container-destination {
+     margin-top: 20px;
+   }
+   
+   .section-title {
+     font-size: 24px;
+     font-weight: bold;
+     margin-bottom: 30px;
+     color: #ff5722;
+   }
+   
+   .package-card {
+     text-align: center;
+   }
+   
+   .package-image {
+     // width: 70%;
+     
+     // height: auto;
+     border-radius: 50%;
+     transition: transform 0.3s ease-in-out;
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+   }
+   
+   .package-image:hover {
+     transform: scale(1.1);
+   }
+   
+   .package-title {
+     font-size: 16px;
+     font-weight: 600;
+     margin-top: 15px;
+     color: #23488A;
+   }
+   
+   @media (min-width: 992px) {
+     .package-image {
+       width: 90%; /* Larger image size for laptop and bigger screens */
+       height: 200px;
+     }
+   }
+
+   @media (max-width: 992px) {
+     .package-image {
+       width: 75%; /* Larger image size for laptop and bigger screens */
+       height: 210px;
+     }
+   }
+   
+   /* Media query for smaller screens (Mobile view) */
+   @media (max-width: 576px) {
+     .package-image {
+        width: 90%;   /* Smaller image size for mobile screens */
+        height: 160px;
+     }
+   }
+
+   
+
+//    :host {
+//      display: block;
+//      padding: 2rem;
+//      background-color: #f9f9f9; /* Light background color */
+//    }
+   
+   .h2 {
+     text-align: center;
+     color: #23488A; /* Darker text for better readability */
+     margin-bottom: 1.5rem;
+     font-weight: bold;
+   }
+   
+   .services-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.5rem;
+   }
+   
+   .service-card {
+     background-color: #ffffff; /* White card background */
+     border: 1px solid #e0e0e0; /* Light gray border */
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+     padding: 1.5rem;
+     // width: 300px;
+     text-align: center;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   
+   .service-card:hover {
+     transform: translateY(-5px); /* Slight lift effect */
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+   }
+   
+   .service-icon {
+     font-size: 2.5rem;
+     color: #3cbab8; /* Light teal color for icons */
+     margin-bottom: 1rem;
+   }
+   
+   .service-title {
+     font-size: 1.2rem;
+     font-weight: bold;
+     color: #23488A;
+     margin-bottom: 0.5rem;
+   }
+   
+   .service-description {
+     font-size: 0.9rem;
+     color: #23488A; 
+     line-height: 1.5;
+   }
+   
+
+ i{
+     color: #23488A;
+ }
+
+   .explore-section {
+     background: url('../../../assets/images/goa_beach.jpg') no-repeat center center/cover;
+     color: #ffffff;
+     text-align: center;
+     // padding: 100px 0px;
+     position: relative;
+   }
+   
+   .explore-container {
+     // max-width: 800px;
+     margin: 0 auto;
+     background-color: rgba(0, 0, 0, 0.6);
+     padding: 40px 0px;
+     // border-radius: 8px;
+   }
+   
+   .subtitle {
+     font-size: 18px;
+     color: #7ab3e6;
+     margin-bottom: 10px;
+     font-weight: bold;
+   }
+   
+   .main-title {
+     font-size: 36px;
+     font-weight: bold;
+     margin-bottom: 20px;
+   }
+   
+   .description {
+     font-size: 16px;
+     margin-bottom: 30px;
+     line-height: 1.6;
+   }
+   
+   .btn-explore {
+     background-color: #7ab3e6;
+     border: none;
+     color: #ffffff;
+     padding: 10px 20px;
+     font-size: 16px;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.3s;
+   }
+   
+   .btn-explore:hover {
+     background-color: #549acb;
+   }
+   
+   

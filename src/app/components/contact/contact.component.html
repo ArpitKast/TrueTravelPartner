@@ -1,0 +1,50 @@
+<section id="contact" class="py-5 bg-light">
+     <div class="container text-center contact-section">
+          <h2 class="text-primary">Request A Personalized Package</h2>
+          <p>
+               Do you have specific requirements? Our agents will create a personalized package for you in no time.
+          </p>
+
+          <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="mt-4">
+               <div class="mb-3">
+                    <input type="text" class="form-control" formControlName="name" placeholder="Name" required />
+               </div>
+               <div class="mb-3">
+                    <input type="tel" class="form-control" formControlName="phone" placeholder="Phone" required />
+               </div>
+               <div class="mb-3">
+                    <input type="email" class="form-control" formControlName="email" placeholder="Email" required />
+               </div>
+               <div class="mb-3">
+                    <input type="text" class="form-control" formControlName="whereTo" placeholder="Where To?" required />
+               </div>
+               <div class="mb-3">
+                    <input type="date" class="form-control" formControlName="date" placeholder="Date" />
+               </div>
+               <div class="mb-3">
+                    <input type="number" class="form-control" formControlName="numberOfPersons"
+                         placeholder="Number Of Person" min="1" />
+               </div>
+               <div class="mb-3">
+                    <textarea type="" class="form-control" formControlName="message" placeholder="Message" ></textarea>
+               </div>
+               <button type="submit" class="btn btn-dark w-100" [disabled]="contactForm.invalid">
+                    Send
+               </button>
+          </form>
+
+          <div class="mt-4">
+               <!-- WhatsApp link -->
+               <a (click)="openWhatsApp()" target="_blank" id="whatsapp-link" class="whatsapp-link me-3"
+                    title="Chat on WhatsApp">
+                    <i class="fa-brands fa-whatsapp fa-2xl"></i>
+               </a>
+               <a id="call-link" href="tel:+8769615528" class="me-3">
+                    <i class="fa-solid fa-phone fa-2xl"></i>
+               </a>
+               <a [href]="'mailto:' + email" id="email-link" class="me-3">
+                    <i class="fa-regular fa-envelope fa-2xl"></i>
+               </a>
+          </div>
+     </div>
+</section>
