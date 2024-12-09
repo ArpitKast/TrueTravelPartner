@@ -53,7 +53,7 @@ export class ContactComponent {
            }
           // const encodedMessage = encodeURIComponent(this.message);
           // const whatsappLink = `https://wa.me/${this.phoneNumber}?text=${encodedMessage}`;
-          // window.open(whatsappLink, '_blank');
+          // window.open(whatsappLink, '_blank')
      }
 
 
