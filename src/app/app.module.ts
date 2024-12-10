@@ -11,23 +11,23 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { DestinationDetailsComponent } from './components/destination-details/destination-details.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ContactComponent,
-    DestinationDetailsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatSnackBarModule
-  ],
-  providers: [
-    provideClientHydration(),
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+     declarations: [
+          AppComponent,
+          HomeComponent,
+          ContactComponent,
+          DestinationDetailsComponent
+     ],
+     imports: [
+          BrowserModule,
+          AppRoutingModule,
+          FormsModule,
+          ReactiveFormsModule,
+          MatSnackBarModule
+     ],
+     providers: [
+          provideClientHydration(),
+          provideAnimationsAsync()
+     ],
+     bootstrap: [AppComponent]
 })
 export class AppModule { }
