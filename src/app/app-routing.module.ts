@@ -21,6 +21,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes, {
+     useHash: true,
      anchorScrolling: 'enabled', // Enable anchor scrolling
      scrollPositionRestoration: 'enabled', // Scroll to top on navigation
    }),],
