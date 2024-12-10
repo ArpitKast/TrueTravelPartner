@@ -10,7 +10,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class ContactComponent {
      contactForm: FormGroup;
-     email = 'arpitkast611@gmail.com';
+     email = 'info@truetravelpartner.com';
      phoneNumber: string = '+919782640733'; // Replace with the desired phone number
      message: string = 'Hello True Travel Team, I’m interested in exploring travel options. Could you share the best packages and destinations?';
 
@@ -70,7 +70,7 @@ export class ContactComponent {
                     message: formValues.message,
                     date: formValues.date || 'Not Provided',
                     numberOfPersons: formValues.numberOfPersons || 'Not Provided',
-                    to_email: 'arpitkast611@gmail.com'
+                    to_email: 'info@truetravelpartner.com'
                };
                //
 
